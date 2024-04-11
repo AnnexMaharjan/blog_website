@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.all .h1{
+    padding: 50px;
+    /* diff font size */
+    font-size: larger;
+    /* diff font color */
+    color:grey;
+}
+.all .sum{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.all .sum .phuto{
+    flex-direction: column;
+    width: 50%;
+    height: 40%;
+}
+.all .sum .phuto img{
+    width: 100%;
+    padding-left: 15px;
+}
+
+footer{
+    position: relative;
+    bottom: -70px;
+    text-align: center;
+    width: 100%;
+    background-color: black;
+    height: 70px;
+    left: 0px;
+    right: 0px;
+    color: white;
+}
+.ba{
+    position: relative;
+    text-align: center;
+    margin-top: 25px;
+}
+.ba a{
+    padding: 15px;
+    background-color: #000000;
+    border-radius: 15px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+nav{
+    width: 100%;
+    position: relative;
+    padding: 10px 8%;
+    display: flex;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(218, 232, 235, 0.532);
+}
+/* hover effect */
+nav ul  :hover{
+    background-color: rgba(64, 164, 214, 0.643);
+    transition:0.3s ease;
+    border: 5 solid;
+    border-radius: 30px;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 50px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: larger;
+}
+
+.tbtn{
+    color: rgb(15, 18, 20);
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+.menudrop{
+    display: none;
+    position: absolute;
+    right: 1rem;
+    top: 50px;
+    height: 200px;
+    width: 200px;
+    background: rgba(11, 12, 12, 0.75);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.3 ease;
+    animation: anm .5s;
+}
+.menudrop.open{
+    height: 220px;
+}
+.menudrop li{
+    
+    list-style: none;
+    text-align: center;
+    padding: 17px;
+}
+@keyframes anm{
+    0%{
+        opacity: 20%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+.menudrop li a{
+    text-decoration: none;
+    padding: 3px;
+    color: aliceblue;
+}
+@media (max-width:900px) {
+.navbar nav ul li{
+     display: none;
+     visibility:collapse;
+
+        }
+
+.tbtn{
+            display: block;
+        }
+    
+    }
